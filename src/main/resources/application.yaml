@@ -1,0 +1,8 @@
+spring:
+  datasource:
+    password: ${DB_PASS:password}
+    username: ${DB_USER:user}
+    driver-class-name: ${DB_DRIVER:org.postgresql.Driver}
+    url: ${DB_URL:jdbc:postgresql://localhost:5432/database}
+server:
+  port: ${PORT:8080}
