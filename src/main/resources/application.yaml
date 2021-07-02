@@ -4,5 +4,7 @@ spring:
     username: ${DB_USER:user}
     driver-class-name: ${DB_DRIVER:org.postgresql.Driver}
     url: ${DB_URL:jdbc:postgresql://localhost:5432/database}
+  liquibase:
+    change-log: db/changelog/db.changelog-master.xml
 server:
   port: ${PORT:8080}
